@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>펫챗 아동 안전 표준</title>
+<meta name="description" content="펫챗(Petchat)의 아동 성적 학대 및 착취(CSAE) 방지 표준">
+<!-- 이 페이지 주소를 Play Console > 앱 콘텐츠 > 아동 안전 표준에 입력합니다. -->
+<style>
+  :root {
+    --bg: #FFFBF7; --surface: #FFFFFF; --border: #E6E1DC; --text: #2A2522;
+    --muted: #7D756E; --primary: #E8602C; --primary-soft: #FFF4EC;
+    --danger: #E5484D; --mark: #FFF1C9;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #171412; --surface: #211D1A; --border: #403A35; --text: #FAF8F6;
+      --muted: #A69E96; --primary: #FF9461; --primary-soft: #2A2522;
+      --danger: #F2777B; --mark: #5C4A1A;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", sans-serif;
+    font-size: 16px; line-height: 1.7; word-break: keep-all; overflow-wrap: anywhere;
+  }
+  main { max-width: 720px; margin: 0 auto; padding: 32px 16px 64px; }
+  header { display: flex; align-items: center; gap: 12px; margin-bottom: 8px; }
+  header svg { width: 44px; height: 44px; flex: none; }
+  h1 { font-size: 1.6rem; line-height: 1.3; margin: 0; }
+  h2 { font-size: 1.15rem; margin: 32px 0 10px; }
+  p, li { margin: 6px 0; }
+  .meta { color: var(--muted); font-size: .9rem; margin: 0 0 20px; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 18px; padding: 16px 18px; }
+  .steps { counter-reset: s; list-style: none; padding: 0; margin: 0; }
+  .steps li { counter-increment: s; position: relative; padding-left: 40px; margin: 12px 0; }
+  .steps li::before {
+    content: counter(s); position: absolute; left: 0; top: 1px; width: 28px; height: 28px;
+    border-radius: 50%; background: var(--primary); color: #fff; font-weight: 700;
+    font-size: .9rem; line-height: 28px; text-align: center;
+  }
+  .warn { background: var(--primary-soft); border-radius: 14px; padding: 12px 16px; }
+  .warn strong { color: var(--danger); }
+  ul { padding-left: 1.2em; }
+  a { color: var(--primary); }
+  .placeholder { background: var(--mark); border-radius: 4px; padding: 0 4px; font-weight: 600; }
+  footer { margin-top: 40px; color: var(--muted); font-size: .85rem; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <svg viewBox="152 176 720 696" aria-hidden="true"><path fill="#FF7A45" d="M 352 176 H 672 A 200 200 0 0 1 872 376 V 536 A 200 200 0 0 1 672 736 H 430 L 236 872 L 252 709 A 200 200 0 0 1 152 536 V 376 A 200 200 0 0 1 352 176 Z"/><g fill="#fff"><ellipse cx="512" cy="530" rx="118" ry="96"/><ellipse cx="372" cy="420" rx="50" ry="62" transform="rotate(-25 372 420)"/><ellipse cx="458" cy="334" rx="52" ry="66" transform="rotate(-8 458 334)"/><ellipse cx="566" cy="334" rx="52" ry="66" transform="rotate(8 566 334)"/><ellipse cx="652" cy="420" rx="50" ry="62" transform="rotate(25 652 420)"/></g></svg>
+    <h1>펫챗 아동 안전 표준</h1>
+  </header>
+  <p class="meta">앱: 펫챗(Petchat) · 개발자: 성대한 · 시행일: 2026년 10월 17일</p>
+
+  <p>펫챗은 반려동물 보호자를 위한 커뮤니티 앱입니다. 펫챗은 <strong>아동 성적 학대 및 착취(CSAE)</strong>와 <strong>아동 성적 학대 콘텐츠(CSAM)</strong>를 어떤 형태로도 허용하지 않으며, 무관용 원칙을 적용합니다.</p>
+
+  <h2>1. 금지되는 행위와 콘텐츠</h2>
+  <div class="card">
+    <ul>
+      <li>아동·청소년을 성적 대상으로 하는 사진, 영상, 글, 그림 등 일체의 콘텐츠(CSAM)</li>
+      <li>아동·청소년에 대한 그루밍(성적 목적의 접근·유인), 성적 대화, 만남 요구</li>
+      <li>아동·청소년에 대한 성적 착취, 인신매매, 성매매 알선·광고</li>
+      <li>위와 같은 콘텐츠를 요청·공유·홍보하거나 이를 찾는 방법을 안내하는 행위</li>
+    </ul>
+  </div>
+  <p>이 금지 사항은 펫챗 이용약관(제3조 금지 행위)과 커뮤니티 가이드라인에 명시되어 있으며, 게시물·댓글·프로필·1:1 채팅 등 앱의 모든 공간에 적용됩니다. 펫챗은 만 14세 이상만 가입할 수 있습니다.</p>
+
+  <h2>2. 앱 안에서 신고하는 방법</h2>
+  <ol class="steps">
+    <li>게시물·댓글: 오른쪽 위 <strong>⋯</strong> 메뉴 → <strong>신고</strong>를 눌러요.</li>
+    <li>채팅 메시지: 메시지를 길게 누른 뒤 <strong>이 메시지 신고</strong>를 눌러요.</li>
+    <li>사용자: 프로필의 <strong>⋯</strong> 메뉴 → <strong>신고</strong> 또는 <strong>차단하기</strong>를 눌러요.</li>
+  </ol>
+  <p>앱을 쓸 수 없거나 긴급한 경우에는 아래 담당자 이메일로 바로 알려 주세요.</p>
+
+  <h2>3. 신고가 접수되면</h2>
+  <ul>
+    <li>아동 안전 관련 신고는 다른 신고보다 <strong>가장 먼저</strong> 검토하며, 모든 신고는 24시간 이내에 검토합니다.</li>
+    <li>위반이 확인되면 콘텐츠를 즉시 삭제하고, 해당 계정을 영구 정지합니다.</li>
+    <li>CSAM이나 아동에 대한 성범죄가 의심되면 관련 법령에 따라 <strong>경찰청(사이버범죄 신고시스템, ecrm.police.go.kr)</strong> 등 수사기관과 관계 기관에 신고하고, 수사에 필요한 범위에서 협조합니다.</li>
+  </ul>
+
+  <h2>4. 법령 준수</h2>
+  <p>펫챗은 「아동·청소년의 성보호에 관한 법률」, 「정보통신망 이용촉진 및 정보보호 등에 관한 법률」 등 대한민국의 아동 보호 관련 법령과 Google Play의 아동 안전 표준 정책을 준수합니다.</p>
+
+  <h2>5. 아동 안전 담당자</h2>
+  <div class="warn">
+    <p>담당자: 성대한 (펫챗 운영자)<br>
+    이메일: <a href="mailto:kurtishahaha@gmail.com">kurtishahaha@gmail.com</a><br>
+    아동 안전 관련 문의와 신고에 대응하며, 아동 안전 정책과 신고 처리 절차를 관리합니다.</p>
+  </div>
+
+  <footer>문의: <a href="mailto:kurtishahaha@gmail.com">kurtishahaha@gmail.com</a> · <a href="privacy-policy.html">개인정보처리방침</a> · <a href="delete-account.html">계정 삭제 안내</a></footer>
+</main>
+</body>
+</html>
